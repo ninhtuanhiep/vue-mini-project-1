@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ── Design Tokens ─────────────────────────────────── */
+:root {
+  --wood-dark:    #3B2A1A;   /* dark walnut */
+  --wood-mid:     #6B4C2A;   /* mahogany */
+  --wood-warm:    #A0683A;   /* oak */
+  --wood-light:   #C8976A;   /* birch */
+  --cream:        #F7F2EB;   /* natural linen */
+  --cream-dark:   #EDE5D8;   /* aged paper */
+  --text-primary: #2C1F0F;
+  --text-muted:   #7A6652;
+  --white:        #FFFFFF;
+  --shadow-soft:  0 2px 16px rgba(59,42,26,0.10);
+  --shadow-card:  0 4px 24px rgba(59,42,26,0.13);
+  --radius:       6px;
+  --transition:   0.22s ease;
+}
+
+/* ── Reset & Base ───────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--cream);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ── Layout ─────────────────────────────────────────── */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+section {
+  width: 100%;
+}
+
+/* ── Buttons ─────────────────────────────────────────── */
+button {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  padding: 10px 22px;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+/* Primary button */
+.btn-primary,
+button:not(.btn-ghost):not(.btn-danger) {
+  background-color: var(--wood-mid);
+  color: var(--white);
+}
+
+.btn-primary:hover,
+button:not(.btn-ghost):not(.btn-danger):hover {
+  background-color: var(--wood-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59,42,26,0.25);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Ghost button */
+.btn-ghost {
+  background: transparent;
+  color: var(--wood-mid);
+  border: 1.5px solid var(--wood-light);
+}
+
+.btn-ghost:hover {
+  background: var(--cream-dark);
+  border-color: var(--wood-mid);
+}
+
+/* Danger button */
+.btn-danger {
+  background: #c0392b;
+  color: var(--white);
+}
+
+.btn-danger:hover {
+  background: #962d22;
+  transform: translateY(-1px);
+}
+
+/* ── Wood grain divider ──────────────────────────────── */
+.divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--wood-warm), var(--wood-light));
+  border-radius: 2px;
+  margin: 12px 0 28px;
+}

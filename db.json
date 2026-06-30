@@ -1,0 +1,66 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Bàn học gỗ tự nhiên",
+      "price": 1200000,
+      "description": "Bàn học chắc chắn, phù hợp học sinh sinh viên.",
+      "emoji": "🪵"
+    },
+    {
+      "id": "2",
+      "name": "Ghế gỗ phòng khách",
+      "price": 850000,
+      "description": "Ghế gỗ đơn giản, bền đẹp.",
+      "emoji": "🪑"
+    },
+    {
+      "id": "3",
+      "name": "Tủ sách gỗ",
+      "price": 2000000,
+      "description": "Tủ sách nhiều ngăn, phù hợp gia đình.",
+      "emoji": "📚"
+    },
+    {
+      "name": "bàn gỗ cao cấp",
+      "price": 1000000,
+      "description": "Cao cấp nhất thị trường hiện tại",
+      "id": "AfU87fj72U4"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Admin",
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "2",
+      "fullName": "Khách hàng",
+      "email": "user@gmail.com",
+      "password": "123456",
+      "role": "customer",
+      "isActive": true
+    },
+    {
+      "fullName": "Hiệp",
+      "email": "hiep1382005@gmail.com",
+      "password": "123456",
+      "role": "customer",
+      "isActive": true,
+      "id": "3"
+    },
+    {
+      "fullName": "Hịp",
+      "email": "hip1382005@gmail.com",
+      "password": "123456",
+      "role": "customer",
+      "isActive": true,
+      "id": "4TKix25EEs4"
+    }
+  ],
+    "orders": []
+}
