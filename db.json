@@ -60,7 +60,16 @@
       "role": "customer",
       "isActive": true,
       "id": "4TKix25EEs4"
+    },
+    {
+      "fullName": "hưng",
+      "email": "hung123@gmail.com",
+      "password": "123456",
+      "role": "customer",
+      "isActive": true,
+      "id": "FX9qsySryxw"
     }
   ],
-    "orders": []
+  "orders": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }
